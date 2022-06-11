@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Tesla<span class="podstrona">/ Kalkulator</span></div>
+        <input type="checkbox" class="nav-toggle" id="nav-toggle">
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="nav-menu">
+            <ul>
+                <li><a href="home.php">Home</a></li>
+                <li><a href="pojazdy.html">Pojazdy</a></li>
+                <li><a href="robot.html">Robot</a></li>
+                <li><a href="roaster.html">Roaster</a></li>
+                <li><a href="inne.html">Inne</a></li>
+                <li><a href="kalkulator.html">Kalkulator</a></li>
+            </ul>
+        </div>
+        <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
+    </nav>
+    <div class="kalkulator">
+        <div class="top">
+            <h2>KREDYT SAMOCHODOWY - KALKULATOR</h2>
+            <form action="#">
+                <div class="wprowadz-dane">
+                    <div class="dane">KWOTA KREDYTU</div>
+                    <input type="text" class="kredyt-kwota" value="120000">
+                </div>
+                <div class="wprowadz-dane">
+                    <div class="dane">OPROCENTOWANIE</div>
+                    <input type="text" class="oprocentowanie" value="7.5">
+                </div>
+                <div class="wprowadz-dane">
+                    <div class="dane">OKRES SPŁATY (mies.)</div>
+                    <input type="text" class="kredyt-okres" value="240">
+                </div>
+            </form>
+        </div>
+        <div class="wynik">
+            <div class="left">
+                <div class="rata">
+                    <h3>Wysokość raty</h3>
+                    <div class="value"></div>
+                </div>
+                <div class="odsetki">
+                    <h3>Odsetki płatne ogółem</h3>
+                    <div class="value"></div>
+                </div>
+                <div class="pelna-kwota">
+                    <h3>Kwota do spłaty</h3>
+                    <div class="value"></div>
+                </div>
+                <button class="calculate-btn">OBLICZ RATĘ KREDYTU</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
